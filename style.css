@@ -1,0 +1,179 @@
+body {
+  background-color: #0d192c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+/* General part */
+
+.card {
+  width: 20em;
+  background: #15263f;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* Part of main image */
+
+.image {
+  position: relative;
+}
+
+.image div {
+  background-color: #00fff783;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  width: 18em;
+  margin: 1em;
+  height: 18em;
+  opacity: 0;
+}
+
+.image div:hover{
+  cursor: pointer;
+  border-radius: 1em;
+  opacity: 1;
+}
+
+.image div img{
+  position: absolute;
+  top:50%
+  left:50%
+  transform: translate{-50%. -50%}
+}
+
+.main_image {
+  width: 18em;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+
+/* Part of texts */
+
+.header_text {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  color: white;
+  font-family: outfit;
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-left: 0.7em;
+  width: 10em;
+  cursor: pointer;
+}
+
+.header_text:hover {
+ color: #00FFF8;
+}
+
+.describe_text {
+  display: flex;
+  justify-content: left;
+  color: #8bacd9;
+  font-family: outfit;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.3em;
+  width: 13em;
+  margin-top: -0.2em;
+  margin-left: 1em;
+
+}
+
+/* Part of details */
+
+.div-details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+  border-color: #2e405a;
+  border-heigh: 1px;
+  margin: 1em;
+  margin-top: -1em;
+}
+.about_eth {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 7em;
+}
+
+.text1 {
+  color: #00fff8;
+  font-family: outfit;
+  margin-left: 0.5em;
+}
+
+.about_time {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 7em;
+}
+
+.text2 {
+  color: #8bacd9;
+  font-family: outfit;
+  margin-left: 0.5em;
+}
+
+/* Part about creator */
+
+.div_creators {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.image_avatar {
+  width: 2em;
+  height: 2em;
+  border: 0.1em solid #ffffff;
+  border-radius: 3em;
+}
+
+.creation {
+  color: #8bacd9;
+  margin-left: 0.5em;
+  font-family: outfit;
+}
+
+.creation_name {
+  color: white;
+  margin-left: 0.2em;
+  font-family: outfit;
+  cursor: pointer;
+}
+
+.creation_name:hover {
+  color: #00FFF8;
+ }
+
+
+@media screen and (min-width: 376px) {
+  body {
+    width: 100vw;
+  }
+  .describe_text {
+    width: 15.7em;
+    margin-right: 0em;
+    font-size: 1.1em;
+  }
+}
